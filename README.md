@@ -39,24 +39,24 @@ python rce_test_script.py [options]
 
 **Example**:
 ```bash
-python rce_test_script.py --url-file ~/recon/example.com/urls.txt --payload-file ~/recon/example.com/payloads.txt --qsreplace-path /usr/local/bin/qsreplace --gf-path /usr/local/bin/gf --max-workers 10 --timeout 20 --verbose --resume
+python rce_test_script.py --url-file ~/recon/yourdir/urls.txt --payload-file ~/recon/yourdir/payloads.txt --qsreplace-path /usr/local/bin/qsreplace --gf-path /usr/local/bin/gf --max-workers 10 --timeout 20 --verbose --resume
 ```
 
 #### Interactive Mode
 ```bash
 python rce_test_script.py
 ```
-- Enter the URL file path (e.g., `~/recon/example.com/urls.txt`) or press Enter for stdin or `--single-url`.
-- Enter the payload file path (e.g., `~/recon/example.com/payloads.txt`) or press Enter to use `payloads.txt` or embedded default payloads.
+- Enter the URL file path (e.g., `~/recon/yourdir/urls.txt`) or press Enter for stdin or `--single-url`.
+- Enter the payload file path (e.g., `~/recon/yourdir/payloads.txt`) or press Enter to use `payloads.txt` or embedded default payloads.
 
 #### Piped Input
 ```bash
-cat ~/recon/example.com/urls.txt | python rce_test_script.py --payload-file ~/recon/example.com/payloads.txt
+cat ~/recon/yourdir/urls.txt | python rce_test_script.py --payload-file ~/recon/your/payloads.txt
 ```
 
 #### Dry Run
 ```bash
-python rce_test_script.py --url-file ~/recon/example.com/urls.txt --dry-run
+python rce_test_script.py --url-file ~/recon/yourdir/urls.txt --dry-run
 ```
 
 ### Output
