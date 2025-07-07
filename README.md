@@ -10,8 +10,8 @@
   - `gf`: Install and configure RCE patterns (e.g., from `gf-patterns`)
   - Python packages: `pip install tqdm validators pyyaml`
 - **Prepare Input**:
-  - **URLs**: Create a file with one URL per line (e.g., `~/recon/example.com/urls.txt`), use a single URL with `--single-url`, or pipe URLs via stdin (`cat urls.txt | python rce_test_script.py`).
-  - **Payloads**: Create a file with one payload per line (e.g., `~/recon/example.com/payloads.txt`), use a single payload with `--single-payload`, or rely on default payloads.
+  - **URLs**: Create a file with one URL per line (e.g., `~/recon/yourdir/urls.txt`), use a single URL with `--single-url`, or pipe URLs via stdin (`cat urls.txt | python rce_test_script.py`).
+  - **Payloads**: Create a file with one payload per line (e.g., `~/recon/yourdir/payloads.txt`), use a single payload with `--single-payload`, or rely on default payloads.
   - **Optional Config**: Create `rce_config.yaml` for default settings (e.g., tool paths, timeout).
 
 ### Running the Tool
